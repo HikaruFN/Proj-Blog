@@ -1,8 +1,10 @@
 /*COLORS*/
 /*Text Colors*/
+/*Background colors*/
 /*Inner Padding*/
 /*Flex*/
 /*Ul*/
+/*Articles*/
 /*Reset*/
 * {
   margin: 0;
@@ -29,7 +31,7 @@ ul {
 .top-header-nav-container {
   display: flex;
   background-color: #0088CC;
-  padding: 30px 150px;
+  padding: 30px 100px;
 }
 .top-header-nav-container ul li {
   color: #FFFFFF;
@@ -37,7 +39,7 @@ ul {
 }
 
 .header-logo-container {
-  padding: 30px 150px;
+  padding: 30px 100px;
 }
 .header-logo-container img {
   width: 150px;
@@ -46,7 +48,7 @@ ul {
 .header-nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 150px;
+  padding: 30px 100px;
 }
 .header-nav-container li {
   color: #555555;
@@ -54,4 +56,164 @@ ul {
 }
 .header-nav-container li:first-child {
   color: #0088CC;
+}
+
+/*Top Main*/
+/*Top Main Articles*/
+.top-main-articles-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #F7F7F7;
+  padding: 30px 100px;
+}
+
+.top-article-container-photography {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  background-size: 100% 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/blog-46.jpg);
+}
+.top-article-container-photography .article-type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-article-container-photography .article-title {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.top-article-container-gadgets {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  background-size: 100% 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/blog-47.jpg);
+}
+.top-article-container-gadgets .article-type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-article-container-gadgets .article-title {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.top-article-container-travel {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  background-size: 100% 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/blog-48.jpg);
+}
+.top-article-container-travel .article-type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-article-container-travel .article-title {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.top-article-container-lifestyle {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  background-size: 100% 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/blog-49.jpg);
+}
+.top-article-container-lifestyle .article-type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-article-container-lifestyle .article-title {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.top-article-container-travel-second {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  background-size: 100% 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/blog-50.jpg);
+}
+.top-article-container-travel-second .article-type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-article-container-travel-second .article-title {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+.top-article-container-recipes {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  background-size: 100% 100%;
+  padding: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/blog-51.jpg);
+}
+.top-article-container-recipes .article-type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-article-container-recipes .article-title {
+  margin-top: 5px;
+  color: #FFFFFF;
 }

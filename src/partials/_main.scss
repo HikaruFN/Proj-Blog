@@ -1,0 +1,40 @@
+/*Top Main*/
+/*Top Main Articles*/
+.top-main-articles-container{
+    @include flex_row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $top_main_articles_bg_color;
+    padding: $inner_padding;
+}
+.top-article-container-photography{
+    @include top_article;
+    @include flex_column;
+    background-image: url(../../img/blog-46.jpg);
+    
+}
+.top-article-container-gadgets{
+    @include top_article;
+    @include flex_column;
+    background-image: url(../../img/blog-47.jpg);
+}
+.top-article-container-travel{
+    @include top_article;
+    @include flex_column;
+    background-image: url(../../img/blog-48.jpg);
+}
+.top-article-container-lifestyle{
+    @include top_article;
+    @include flex_column;
+    background-image: url(../../img/blog-49.jpg);
+}
+.top-article-container-travel-second{
+    @include top_article;
+    @include flex_column;
+    background-image: url(../../img/blog-50.jpg);
+}
+.top-article-container-recipes{
+    @include top_article;
+    @include flex_column;
+    background-image: url(../../img/blog-51.jpg);    
+}
