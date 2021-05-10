@@ -75,7 +75,7 @@ ul {
 .top-article-container-photography {
   margin: 5px;
   width: calc(100% / 3 - 10px);
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 10px;
   opacity: 0.9;
   justify-content: flex-end;
@@ -104,7 +104,7 @@ ul {
 .top-article-container-gadgets {
   margin: 5px;
   width: calc(100% / 3 - 10px);
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 10px;
   opacity: 0.9;
   justify-content: flex-end;
@@ -133,7 +133,7 @@ ul {
 .top-article-container-travel {
   margin: 5px;
   width: calc(100% / 3 - 10px);
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 10px;
   opacity: 0.9;
   justify-content: flex-end;
@@ -162,7 +162,7 @@ ul {
 .top-article-container-lifestyle {
   margin: 5px;
   width: calc(100% / 3 - 10px);
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 10px;
   opacity: 0.9;
   justify-content: flex-end;
@@ -191,7 +191,7 @@ ul {
 .top-article-container-travel-second {
   margin: 5px;
   width: calc(100% / 3 - 10px);
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 10px;
   opacity: 0.9;
   justify-content: flex-end;
@@ -220,7 +220,7 @@ ul {
 .top-article-container-recipes {
   margin: 5px;
   width: calc(100% / 3 - 10px);
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 10px;
   opacity: 0.9;
   justify-content: flex-end;
