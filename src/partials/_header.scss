@@ -1,1 +1,12 @@
-
+/*Top Header*/
+.top-header-nav{
+    @include flex_row;
+    background-color: $primary_color;
+    padding: $inner_padding;
+    ul{
+        li{
+            color: $secondary_text_color;
+            padding-left: 30px;
+        }
+    }
+}

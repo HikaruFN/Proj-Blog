@@ -1,0 +1,10 @@
+/*Flex*/
+@mixin flex_row {
+    display: flex;
+}
+
+/*Ul*/
+@mixin default_ul {
+    list-style: none;
+    cursor: pointer;
+}

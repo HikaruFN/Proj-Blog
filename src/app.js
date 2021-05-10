@@ -1,7 +1,9 @@
 var app = new Vue({
     el: '#root',   
     data:{
-        
+        //Top Header
+        topHeaderIntro: 'Everything about Lifestyle, Travel and Gadgets!',
+        topHeaderNav: ['SIGN IN', 'ABOUT US', 'CONTACT US','BUY NOW'],
     } 
 });
 

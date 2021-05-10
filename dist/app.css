@@ -1,4 +1,33 @@
 /*COLORS*/
-/*Backgrounds colors*/
-/*Text colors*/
-/*Border colors*/
+/*Text Colors*/
+/*Inner Padding*/
+/*Flex*/
+/*Ul*/
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*General*/
+p {
+  color: #B7B7B7;
+}
+
+ul {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+}
+
+/*Top Header*/
+.top-header-nav {
+  display: flex;
+  background-color: #0088CC;
+  padding: 30px 150px;
+}
+.top-header-nav ul li {
+  color: #FFFFFF;
+  padding-left: 30px;
+}

@@ -1,0 +1,15 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General*/
+p{
+    color: $primary_text_color;
+}
+ul{
+    @include default_ul;
+    @include flex_row;
+}

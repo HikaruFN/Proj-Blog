@@ -14,7 +14,29 @@
 
         <!--HEADER-->
         <header>
-            
+
+            <!--Top Header Nav-->
+            <div class="top-header-nav">
+                <!--Top Header Intro-->
+                <div>
+                    <p>{{topHeaderIntro}}</p>
+                </div>
+                <!--End Top Header Intro-->
+                <!--Top Header Nav-->
+                <div>
+                    <ul>
+                        <li v-for="(elements, index) in topHeaderNav">{{topHeaderNav[index]}}</li>
+                    </ul>
+                </div>
+                <!--End Top Header Nav-->
+            </div>
+            <!--End Top Header Nav-->
+
+            <!--Header Logo-->
+            <div>
+                <img src="" alt="">
+            </div>
+            <!--END Header Logo-->
         </header>
         <!--END HEADER-->
 
