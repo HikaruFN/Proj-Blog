@@ -21,13 +21,17 @@ ul {
   display: flex;
 }
 
+.fas {
+  color: black;
+}
+
 /*Top Header*/
-.top-header-nav {
+.top-header-nav-container {
   display: flex;
   background-color: #0088CC;
   padding: 30px 150px;
 }
-.top-header-nav ul li {
+.top-header-nav-container ul li {
   color: #FFFFFF;
   padding-left: 30px;
 }
@@ -37,4 +41,17 @@ ul {
 }
 .header-logo-container img {
   width: 150px;
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 150px;
+}
+.header-nav-container li {
+  color: #555555;
+  padding-right: 30px;
+}
+.header-nav-container li:first-child {
+  color: #0088CC;
 }

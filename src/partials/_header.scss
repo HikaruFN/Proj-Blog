@@ -1,5 +1,5 @@
 /*Top Header*/
-.top-header-nav{
+.top-header-nav-container{
     @include flex_row;
     background-color: $primary_color;
     padding: $inner_padding;
@@ -16,4 +16,17 @@
         img{
             width: 150px;
         }
+}
+
+.header-nav-container{
+    @include flex_row;
+    justify-content: space-between;
+    padding: $inner_padding;
+    li{
+        color: #555555;
+        padding-right: 30px;
+    }
+    li:first-child{
+        color: $primary_color;
+    }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Logistic</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
@@ -14,9 +15,8 @@
 
         <!--HEADER-->
         <header>
-
             <!--Top Header Nav-->
-            <div class="top-header-nav">
+            <div class="top-header-nav-container">
                 <!--Top Header Intro-->
                 <div>
                     <p>{{topHeaderIntro}}</p>
@@ -31,16 +31,37 @@
                 <!--End Top Header Nav-->
             </div>
             <!--End Top Header Nav-->
-
             <!--Header Logo-->
             <div class="header-logo-container">
                 <img :src="headerLogo" alt="logo-default-slim">
             </div>
             <!--END Header Logo-->
             <hr>
+
+            <!--Header Nav-->
+            <div class="header-nav-container">
+                <!--Nav-->
+                <div>
+                    <ul>
+                        <li v-for="(element, index) in headerNav">{{headerNav[index]}}</li>
+                    </ul>
+                </div>
+                <!--End Nav-->
+                <!--Search-->
+                <div>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <!--End Search-->
+            </div>
+            <!--End Header Nav-->
         </header>
         <!--END HEADER-->
 
+        <!--MAIN-->
+        <main>
+            
+        </main>
+        <!--END MAIN-->
     </div>
     <!--END ID ROOT-->
     <script src="dist/app.js"></script>
