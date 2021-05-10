@@ -31,3 +31,10 @@ ul {
   color: #FFFFFF;
   padding-left: 30px;
 }
+
+.header-logo-container {
+  padding: 30px 150px;
+}
+.header-logo-container img {
+  width: 150px;
+}

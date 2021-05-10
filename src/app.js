@@ -4,6 +4,7 @@ var app = new Vue({
         //Top Header
         topHeaderIntro: 'Everything about Lifestyle, Travel and Gadgets!',
         topHeaderNav: ['SIGN IN', 'ABOUT US', 'CONTACT US','BUY NOW'],
+        headerLogo: 'img/logo-default-slim.png',
     } 
 });
 
