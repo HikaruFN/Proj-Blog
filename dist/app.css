@@ -13,6 +13,10 @@
 }
 
 /*General*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 p {
   color: #B7B7B7;
 }
@@ -73,13 +77,16 @@ ul {
   width: calc(100% / 3 - 10px);
   background-size: 100% 100%;
   padding: 10px;
+  opacity: 0.9;
   justify-content: flex-end;
   height: 250px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-image: url(../../img/blog-46.jpg);
 }
 .top-article-container-photography .article-type {
+  font-size: 8px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #0088CC;
@@ -89,6 +96,7 @@ ul {
   color: #FFFFFF;
 }
 .top-article-container-photography .article-title {
+  font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
 }
@@ -98,13 +106,16 @@ ul {
   width: calc(100% / 3 - 10px);
   background-size: 100% 100%;
   padding: 10px;
+  opacity: 0.9;
   justify-content: flex-end;
   height: 250px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-image: url(../../img/blog-47.jpg);
 }
 .top-article-container-gadgets .article-type {
+  font-size: 8px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #0088CC;
@@ -114,6 +125,7 @@ ul {
   color: #FFFFFF;
 }
 .top-article-container-gadgets .article-title {
+  font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
 }
@@ -123,13 +135,16 @@ ul {
   width: calc(100% / 3 - 10px);
   background-size: 100% 100%;
   padding: 10px;
+  opacity: 0.9;
   justify-content: flex-end;
   height: 250px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-image: url(../../img/blog-48.jpg);
 }
 .top-article-container-travel .article-type {
+  font-size: 8px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #0088CC;
@@ -139,6 +154,7 @@ ul {
   color: #FFFFFF;
 }
 .top-article-container-travel .article-title {
+  font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
 }
@@ -148,13 +164,16 @@ ul {
   width: calc(100% / 3 - 10px);
   background-size: 100% 100%;
   padding: 10px;
+  opacity: 0.9;
   justify-content: flex-end;
   height: 250px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-image: url(../../img/blog-49.jpg);
 }
 .top-article-container-lifestyle .article-type {
+  font-size: 8px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #0088CC;
@@ -164,6 +183,7 @@ ul {
   color: #FFFFFF;
 }
 .top-article-container-lifestyle .article-title {
+  font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
 }
@@ -173,13 +193,16 @@ ul {
   width: calc(100% / 3 - 10px);
   background-size: 100% 100%;
   padding: 10px;
+  opacity: 0.9;
   justify-content: flex-end;
   height: 250px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-image: url(../../img/blog-50.jpg);
 }
 .top-article-container-travel-second .article-type {
+  font-size: 8px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #0088CC;
@@ -189,6 +212,7 @@ ul {
   color: #FFFFFF;
 }
 .top-article-container-travel-second .article-title {
+  font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
 }
@@ -198,13 +222,16 @@ ul {
   width: calc(100% / 3 - 10px);
   background-size: 100% 100%;
   padding: 10px;
+  opacity: 0.9;
   justify-content: flex-end;
   height: 250px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   background-image: url(../../img/blog-51.jpg);
 }
 .top-article-container-recipes .article-type {
+  font-size: 8px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #0088CC;
@@ -214,6 +241,7 @@ ul {
   color: #FFFFFF;
 }
 .top-article-container-recipes .article-title {
+  font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
 }

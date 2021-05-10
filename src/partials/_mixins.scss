@@ -19,9 +19,12 @@
     width: calc(100% / 3 - 10px);  
     background-size: 100% 100%;
     padding: 10px;
+    opacity: 0.9;
     justify-content: flex-end;
     height: 250px;
+    cursor: pointer;
     .article-type{
+        font-size: 8px;
         padding: 5px 10px;
         border-radius: 5px;
         background-color: $primary_color;
@@ -29,6 +32,7 @@
         color: $secondary_text_color;
     }
     .article-title{
+        font-size: 12px;
         margin-top: 5px;
         color: $secondary_text_color;
     }
