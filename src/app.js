@@ -6,7 +6,7 @@ var app = new Vue({
         topHeaderNav: ['SIGN IN', 'ABOUT US', 'CONTACT US','BUY NOW'],
         headerLogo: 'img/logo-default-slim.png',
         //Header Nav
-        headerNav: ['HOME', 'ELEMENTES', 'FEATURES', 'PAGES', 'PORTFOLIO', 'BLOG', 'SHOP',]
+        headerNav: ['HOME', 'ELEMENTS', 'FEATURES', 'PAGES', 'PORTFOLIO', 'BLOG', 'SHOP',]
     } 
 });
 

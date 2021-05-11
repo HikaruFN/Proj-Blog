@@ -4,11 +4,11 @@
 /*Inner Padding*/
 /*Flex*/
 /*Ul*/
+/*Links*/
 /*Top Main*/
 /*Articles*/
 /*Posts*/
 /*Core Main Articles*/
-/*Article Date*/
 /*Day*/
 /*Month*/
 /*Reset*/
@@ -361,6 +361,7 @@ hr {
 }
 .core-articles-container .core-article-container {
   width: 70%;
+  margin-bottom: 20px;
 }
 .core-articles-container .core-article-container .core-article-info-container {
   display: flex;
@@ -368,6 +369,23 @@ hr {
 }
 .core-articles-container .core-article-container .core-article-info-container .article-info .article-details {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .read-more {
+  padding: 10px;
+  border: 1px solid #F7F7F7;
+  border-radius: 10px;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .details-container {
+  display: flex;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .details-container .detail {
+  margin: 0 5px;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .details-container .detail a {
+  text-decoration: none;
+  color: #0088CC;
 }
 .core-articles-container .core-article-container .core-article-info-container .article-date-container {
   width: 10%;
@@ -397,6 +415,5 @@ hr {
 }
 .core-articles-container .social-info-container {
   width: 30%;
-  height: 200px;
   background-color: blue;
 }

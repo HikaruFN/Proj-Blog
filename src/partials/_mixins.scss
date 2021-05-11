@@ -16,6 +16,12 @@
     }
 }
 
+/*Links*/
+@mixin default_a{
+    text-decoration: none;
+    color: $primary_color;
+}
+
 /*Top Main*/
 /*Articles*/
 @mixin top_articles {
@@ -114,7 +120,6 @@
 }
 
 /*Core Main Articles*/
-/*Article Date*/
 /*Day*/
 @mixin day {
     text-align: center;
@@ -130,4 +135,10 @@
     width: 50px;
     color: $secondary_text_color;
     background-color: $main-slider-nav-type-option-bg-color;
+}
+//
+@mixin read_more{
+    padding: 10px;
+    border: 1px solid $top_main_articles_bg_color;
+    border-radius: 10px
 }

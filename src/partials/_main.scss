@@ -71,11 +71,26 @@
     flex-wrap: wrap;
     .core-article-container{
         width: 70%;
+        margin-bottom: 20px;
         .core-article-info-container{
             @include flex_row;
             padding: 10px;
             .article-info .article-details{
                 @include flex_row;
+                justify-content: space-between;
+                align-items: center;
+                .read-more{
+                    @include read_more;
+                }
+                .details-container{
+                    @include flex_row;
+                    .detail{
+                        margin: 0 5px;
+                        a{
+                            @include default_a;
+                        }
+                    }
+                }
             }
             .article-date-container{
                 width: 10%;
@@ -98,7 +113,6 @@
     }
     .social-info-container{
         width: 30%;
-        height: 200px;
         background-color: blue;
     }
 }
