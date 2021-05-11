@@ -263,11 +263,9 @@ hr {
 .top-main-posts-container .popular-posts-container, .top-main-posts-container .recent-posts-container, .top-main-posts-container .featured-and-author-posts-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: calc(100% / 3 - 10px);
   margin: 0 5px;
-}
-.top-main-posts-container .popular-posts-container .featured-posts-container, .top-main-posts-container .recent-posts-container .featured-posts-container, .top-main-posts-container .featured-and-author-posts-container .featured-posts-container {
-  height: 60%;
 }
 .top-main-posts-container .popular-posts-container .featured-posts-container .featured-post, .top-main-posts-container .recent-posts-container .featured-posts-container .featured-post, .top-main-posts-container .featured-and-author-posts-container .featured-posts-container .featured-post {
   opacity: 0.9;
@@ -275,7 +273,7 @@ hr {
   flex-direction: column;
   justify-content: flex-end;
   padding: 10px;
-  height: 300px;
+  height: 200px;
   cursor: pointer;
   background-image: url(../../img/blog-66.jpg);
   background-size: cover;
@@ -295,9 +293,6 @@ hr {
   margin-top: 5px;
   color: #FFFFFF;
 }
-.top-main-posts-container .popular-posts-container .author-posts-container, .top-main-posts-container .recent-posts-container .author-posts-container, .top-main-posts-container .featured-and-author-posts-container .author-posts-container {
-  height: 40%;
-}
 .top-main-posts-container .popular-posts-container .author-posts-container .author-post, .top-main-posts-container .recent-posts-container .author-posts-container .author-post, .top-main-posts-container .featured-and-author-posts-container .author-posts-container .author-post {
   display: flex;
   align-items: center;
@@ -306,7 +301,7 @@ hr {
   margin-bottom: 10px;
 }
 .top-main-posts-container .popular-posts-container .author-posts-container .author-post img, .top-main-posts-container .recent-posts-container .author-posts-container .author-post img, .top-main-posts-container .featured-and-author-posts-container .author-posts-container .author-post img {
-  width: 200px;
+  width: 180px;
   margin-right: 10px;
 }
 .top-main-posts-container .popular-posts-container .post-type, .top-main-posts-container .recent-posts-container .post-type, .top-main-posts-container .featured-and-author-posts-container .post-type {
@@ -320,6 +315,7 @@ hr {
   display: flex;
   align-items: center;
   padding: 5px;
+  cursor: pointer;
 }
 .top-main-posts-container .popular-posts-container .posts .post .post-info h4, .top-main-posts-container .popular-posts-container .author-post-content .post .post-info h4, .top-main-posts-container .recent-posts-container .posts .post .post-info h4, .top-main-posts-container .recent-posts-container .author-post-content .post .post-info h4, .top-main-posts-container .featured-and-author-posts-container .posts .post .post-info h4, .top-main-posts-container .featured-and-author-posts-container .author-post-content .post .post-info h4 {
   margin-bottom: 10px;
@@ -344,7 +340,7 @@ hr {
   cursor: pointer;
 }
 .slider-nav-container .option-type-container {
-  padding: 5px 35px;
+  padding: 5px 25px;
   background-color: #212529;
   cursor: pointer;
 }

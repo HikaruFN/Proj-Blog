@@ -46,16 +46,16 @@
     padding: $inner_padding;
     .popular-posts-container, .recent-posts-container, .featured-and-author-posts-container{
         @include flex_column;
+        justify-content: space-between;
         width: calc(100% / 3 - 10px);
         margin: 0 5px;
         .featured-posts-container{
-            height: 60%; 
             .featured-post{
                 opacity: 0.9;
                 @include flex_column;
                 justify-content: flex-end;
                 padding: 10px;
-                height: 300px;
+                height: 200px;
                 cursor: pointer;
                 background-image: url(../../img/blog-66.jpg);
                 background-size: cover;
@@ -75,7 +75,6 @@
             }
         }
         .author-posts-container{
-            height: 40%;
             .author-post{
                 @include flex_row;
                 align-items: center;
@@ -83,7 +82,7 @@
                     margin-bottom: 10px;
                 }
                 img{
-                    width: 200px;
+                    width: 180px;
                     margin-right: 10px;
                 }
             }
@@ -97,6 +96,7 @@
                 @include flex_row;
                 align-items: center;
                 padding: 5px;
+                cursor: pointer;
                 .post-info{
                     h4{
                         margin-bottom: 10px;
