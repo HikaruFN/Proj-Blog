@@ -330,3 +330,25 @@ hr {
 .top-main-posts-container .popular-posts-container .posts .post .post-img img, .top-main-posts-container .popular-posts-container .author-post-content .post .post-img img, .top-main-posts-container .recent-posts-container .posts .post .post-img img, .top-main-posts-container .recent-posts-container .author-post-content .post .post-img img, .top-main-posts-container .featured-and-author-posts-container .posts .post .post-img img, .top-main-posts-container .featured-and-author-posts-container .author-post-content .post .post-img img {
   width: 100px;
 }
+
+/*Main Slider Nav*/
+.slider-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0088CC;
+  padding: 30px 100px;
+}
+.slider-nav-container .slider-chevron {
+  font-size: 10px;
+  cursor: pointer;
+}
+.slider-nav-container .option-type-container {
+  padding: 5px 35px;
+  background-color: #212529;
+  cursor: pointer;
+}
+.slider-nav-container .option-type-container h3 {
+  font-size: 15px;
+  color: #FFFFFF;
+}

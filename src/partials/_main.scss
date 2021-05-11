@@ -43,3 +43,24 @@
     @include flex_row;
     @include top_posts;
 }
+/*Main Slider Nav*/
+.slider-nav-container{
+    @include flex_row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary_color;
+    padding: $inner_padding;
+    .slider-chevron{
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .option-type-container{
+        padding: 5px 35px;
+        background-color: $main-slider-nav-type-option-bg-color;
+        cursor: pointer;
+        h3{
+            font-size: 15px;
+            color: $secondary_text_color;
+        }
+    }
+}
