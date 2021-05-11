@@ -112,3 +112,22 @@
         }
     }
 }
+
+/*Core Main Articles*/
+/*Article Date*/
+/*Day*/
+@mixin day {
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: $top_main_articles_bg_color;
+}
+/*Month*/
+@mixin month {
+    text-align: center;
+    height: 20px;
+    width: 50px;
+    color: $secondary_text_color;
+    background-color: $main-slider-nav-type-option-bg-color;
+}

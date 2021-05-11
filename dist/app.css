@@ -7,6 +7,10 @@
 /*Top Main*/
 /*Articles*/
 /*Posts*/
+/*Core Main Articles*/
+/*Article Date*/
+/*Day*/
+/*Month*/
 /*Reset*/
 * {
   margin: 0;
@@ -357,6 +361,36 @@ hr {
 }
 .core-articles-container .core-article-container {
   width: 70%;
+}
+.core-articles-container .core-article-container .core-article-info-container {
+  display: flex;
+  padding: 10px;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-info .article-details {
+  display: flex;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-date-container {
+  width: 10%;
+  margin-right: 10px;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-date-container .article-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-date-container .article-date .month {
+  text-align: center;
+  height: 20px;
+  width: 50px;
+  color: #FFFFFF;
+  background-color: #212529;
+}
+.core-articles-container .core-article-container .core-article-info-container .article-date-container .article-date .day {
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: #F7F7F7;
 }
 .core-articles-container .core-article-container img {
   width: 100%;
