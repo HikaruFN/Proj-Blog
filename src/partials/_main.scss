@@ -8,33 +8,38 @@
     padding: $inner_padding;
 }
 .top-article-container-photography{
-    @include top_article;
+    @include top_articles;
     @include flex_column;
     background-image: url(../../img/blog-46.jpg);
     
 }
 .top-article-container-gadgets{
-    @include top_article;
+    @include top_articles;
     @include flex_column;
     background-image: url(../../img/blog-47.jpg);
 }
 .top-article-container-travel{
-    @include top_article;
+    @include top_articles;
     @include flex_column;
     background-image: url(../../img/blog-48.jpg);
 }
 .top-article-container-lifestyle{
-    @include top_article;
+    @include top_articles;
     @include flex_column;
     background-image: url(../../img/blog-49.jpg);
 }
 .top-article-container-travel-second{
-    @include top_article;
+    @include top_articles;
     @include flex_column;
     background-image: url(../../img/blog-50.jpg);
 }
 .top-article-container-recipes{
-    @include top_article;
+    @include top_articles;
     @include flex_column;
     background-image: url(../../img/blog-51.jpg);    
+}
+/*Top Main Posts*/
+.top-main-posts-container{
+    @include flex_row;
+    @include top_posts;
 }

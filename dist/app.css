@@ -4,7 +4,9 @@
 /*Inner Padding*/
 /*Flex*/
 /*Ul*/
+/*Top Main*/
 /*Articles*/
+/*Posts*/
 /*Reset*/
 * {
   margin: 0;
@@ -26,9 +28,16 @@ ul {
   cursor: pointer;
   display: flex;
 }
+ul li {
+  font-weight: bolder;
+}
 
 .fas {
   color: black;
+}
+
+hr {
+  border-top: 1px solid #B7B7B7;
 }
 
 /*Top Header*/
@@ -244,4 +253,80 @@ ul {
   font-size: 12px;
   margin-top: 5px;
   color: #FFFFFF;
+}
+
+/*Top Main Posts*/
+.top-main-posts-container {
+  display: flex;
+  padding: 30px 100px;
+}
+.top-main-posts-container .popular-posts-container, .top-main-posts-container .recent-posts-container, .top-main-posts-container .featured-and-author-posts-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 10px);
+  margin: 0 5px;
+}
+.top-main-posts-container .popular-posts-container .featured-posts-container, .top-main-posts-container .recent-posts-container .featured-posts-container, .top-main-posts-container .featured-and-author-posts-container .featured-posts-container {
+  height: 60%;
+}
+.top-main-posts-container .popular-posts-container .featured-posts-container .featured-post, .top-main-posts-container .recent-posts-container .featured-posts-container .featured-post, .top-main-posts-container .featured-and-author-posts-container .featured-posts-container .featured-post {
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  height: 300px;
+  cursor: pointer;
+  background-image: url(../../img/blog-66.jpg);
+  background-size: cover;
+}
+.top-main-posts-container .popular-posts-container .featured-posts-container .featured-post .article-type, .top-main-posts-container .recent-posts-container .featured-posts-container .featured-post .article-type, .top-main-posts-container .featured-and-author-posts-container .featured-posts-container .featured-post .article-type {
+  font-size: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0088CC;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFFFFF;
+}
+.top-main-posts-container .popular-posts-container .featured-posts-container .featured-post .article-title, .top-main-posts-container .recent-posts-container .featured-posts-container .featured-post .article-title, .top-main-posts-container .featured-and-author-posts-container .featured-posts-container .featured-post .article-title {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+.top-main-posts-container .popular-posts-container .author-posts-container, .top-main-posts-container .recent-posts-container .author-posts-container, .top-main-posts-container .featured-and-author-posts-container .author-posts-container {
+  height: 40%;
+}
+.top-main-posts-container .popular-posts-container .author-posts-container .author-post, .top-main-posts-container .recent-posts-container .author-posts-container .author-post, .top-main-posts-container .featured-and-author-posts-container .author-posts-container .author-post {
+  display: flex;
+  align-items: center;
+}
+.top-main-posts-container .popular-posts-container .author-posts-container .author-post .author-post-content .post-info h4, .top-main-posts-container .recent-posts-container .author-posts-container .author-post .author-post-content .post-info h4, .top-main-posts-container .featured-and-author-posts-container .author-posts-container .author-post .author-post-content .post-info h4 {
+  margin-bottom: 10px;
+}
+.top-main-posts-container .popular-posts-container .author-posts-container .author-post img, .top-main-posts-container .recent-posts-container .author-posts-container .author-post img, .top-main-posts-container .featured-and-author-posts-container .author-posts-container .author-post img {
+  width: 200px;
+  margin-right: 10px;
+}
+.top-main-posts-container .popular-posts-container .post-type, .top-main-posts-container .recent-posts-container .post-type, .top-main-posts-container .featured-and-author-posts-container .post-type {
+  margin-bottom: 10px;
+}
+.top-main-posts-container .popular-posts-container .posts, .top-main-posts-container .popular-posts-container .author-post-content, .top-main-posts-container .recent-posts-container .posts, .top-main-posts-container .recent-posts-container .author-post-content, .top-main-posts-container .featured-and-author-posts-container .posts, .top-main-posts-container .featured-and-author-posts-container .author-post-content {
+  display: flex;
+  flex-direction: column;
+}
+.top-main-posts-container .popular-posts-container .posts .post, .top-main-posts-container .popular-posts-container .author-post-content .post, .top-main-posts-container .recent-posts-container .posts .post, .top-main-posts-container .recent-posts-container .author-post-content .post, .top-main-posts-container .featured-and-author-posts-container .posts .post, .top-main-posts-container .featured-and-author-posts-container .author-post-content .post {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.top-main-posts-container .popular-posts-container .posts .post .post-info h4, .top-main-posts-container .popular-posts-container .author-post-content .post .post-info h4, .top-main-posts-container .recent-posts-container .posts .post .post-info h4, .top-main-posts-container .recent-posts-container .author-post-content .post .post-info h4, .top-main-posts-container .featured-and-author-posts-container .posts .post .post-info h4, .top-main-posts-container .featured-and-author-posts-container .author-post-content .post .post-info h4 {
+  margin-bottom: 10px;
+}
+.top-main-posts-container .popular-posts-container .posts .post .post-img, .top-main-posts-container .popular-posts-container .author-post-content .post .post-img, .top-main-posts-container .recent-posts-container .posts .post .post-img, .top-main-posts-container .recent-posts-container .author-post-content .post .post-img, .top-main-posts-container .featured-and-author-posts-container .posts .post .post-img, .top-main-posts-container .featured-and-author-posts-container .author-post-content .post .post-img {
+  margin-right: 10px;
+}
+.top-main-posts-container .popular-posts-container .posts .post .post-img img, .top-main-posts-container .popular-posts-container .author-post-content .post .post-img img, .top-main-posts-container .recent-posts-container .posts .post .post-img img, .top-main-posts-container .recent-posts-container .author-post-content .post .post-img img, .top-main-posts-container .featured-and-author-posts-container .posts .post .post-img img, .top-main-posts-container .featured-and-author-posts-container .author-post-content .post .post-img img {
+  width: 100px;
 }

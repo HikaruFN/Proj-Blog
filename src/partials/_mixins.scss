@@ -11,10 +11,14 @@
 @mixin default_ul {
     list-style: none;
     cursor: pointer;
+    li{
+        font-weight: bolder;
+    }
 }
 
+/*Top Main*/
 /*Articles*/
-@mixin top_article {
+@mixin top_articles {
     margin: 5px;
     width: calc(100% / 3 - 10px);  
     background-size: cover;
@@ -35,5 +39,76 @@
         font-size: 12px;
         margin-top: 5px;
         color: $secondary_text_color;
+    }
+}
+/*Posts*/
+@mixin top_posts {
+    padding: $inner_padding;
+    .popular-posts-container, .recent-posts-container, .featured-and-author-posts-container{
+        @include flex_column;
+        width: calc(100% / 3 - 10px);
+        margin: 0 5px;
+        .featured-posts-container{
+            height: 60%; 
+            .featured-post{
+                opacity: 0.9;
+                @include flex_column;
+                justify-content: flex-end;
+                padding: 10px;
+                height: 300px;
+                cursor: pointer;
+                background-image: url(../../img/blog-66.jpg);
+                background-size: cover;
+                .article-type{
+                    font-size: 8px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: $primary_color;
+                    width: fit-content;
+                    color: $secondary_text_color;
+                }
+                .article-title{
+                    font-size: 12px;
+                    margin-top: 5px;
+                    color: $secondary_text_color;
+                }
+            }
+        }
+        .author-posts-container{
+            height: 40%;
+            .author-post{
+                @include flex_row;
+                align-items: center;
+                .author-post-content .post-info h4{
+                    margin-bottom: 10px;
+                }
+                img{
+                    width: 200px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .post-type{
+            margin-bottom: 10px;
+        }
+        .posts, .author-post-content{
+            @include flex_column;
+            .post{
+                @include flex_row;
+                align-items: center;
+                padding: 5px;
+                .post-info{
+                    h4{
+                        margin-bottom: 10px;
+                    }
+                }
+                .post-img{
+                    margin-right: 10px;
+                    img{
+                        width: 100px;
+                    }   
+                }     
+            }
+        }
     }
 }
