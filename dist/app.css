@@ -44,7 +44,7 @@ hr {
 .top-header-nav-container {
   display: flex;
   background-color: #0088CC;
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 .top-header-nav-container ul li {
   color: #FFFFFF;
@@ -52,7 +52,7 @@ hr {
 }
 
 .header-logo-container {
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 .header-logo-container img {
   width: 150px;
@@ -61,7 +61,7 @@ hr {
 .header-nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 .header-nav-container li {
   color: #555555;
@@ -78,7 +78,7 @@ hr {
   justify-content: center;
   flex-wrap: wrap;
   background-color: #F7F7F7;
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 
 .top-article-container-photography {
@@ -258,7 +258,7 @@ hr {
 /*Top Main Posts*/
 .top-main-posts-container {
   display: flex;
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 .top-main-posts-container .popular-posts-container, .top-main-posts-container .recent-posts-container, .top-main-posts-container .featured-and-author-posts-container {
   display: flex;
@@ -333,7 +333,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   background-color: #0088CC;
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 .slider-nav-container .slider-chevron {
   font-size: 10px;
@@ -347,4 +347,22 @@ hr {
 .slider-nav-container .option-type-container h3 {
   font-size: 15px;
   color: #FFFFFF;
+}
+
+/*Main Core Articles*/
+.core-articles-container {
+  padding: 30px 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.core-articles-container .core-article-container {
+  width: 70%;
+}
+.core-articles-container .core-article-container img {
+  width: 100%;
+}
+.core-articles-container .social-info-container {
+  width: 30%;
+  height: 200px;
+  background-color: blue;
 }

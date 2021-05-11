@@ -64,3 +64,20 @@
         }
     }
 }
+/*Main Core Articles*/
+.core-articles-container{
+    padding: $inner_padding;
+    @include flex_row;
+    flex-wrap: wrap;
+    .core-article-container{
+        width: 70%;
+        img{
+            width: 100%;
+        }
+    }
+    .social-info-container{
+        width: 30%;
+        height: 200px;
+        background-color: blue;
+    }
+}
