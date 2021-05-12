@@ -149,3 +149,11 @@
     background-color: $main-slider-nav-type-option-bg-color;
     color: $secondary_text_color;
 }
+
+/*Footer Containers*/
+@mixin footer_container {
+    @include flex_row;
+    justify-content: space-between;
+    padding: $inner_padding;
+    position: relative;
+}

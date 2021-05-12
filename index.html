@@ -378,7 +378,7 @@
                                     <!--Comments-->
                                     <div class="detail">
                                         <i class="far fa-comments"></i>
-                                        <a href="#">12, Comments</a>
+                                        <a href="#">12 Comments</a>
                                     </div>
                                 </div>   
                                 <!--Read More-->
@@ -528,7 +528,7 @@
                                     <!--Comments-->
                                     <div class="detail">
                                         <i class="far fa-comments"></i>
-                                        <a href="#">12, Comments</a>
+                                        <a href="#">12 Comments</a>
                                     </div>
                                 </div>   
                                 <!--Read More-->
@@ -608,7 +608,7 @@
                                     <!--Comments-->
                                     <div class="detail">
                                         <i class="far fa-comments"></i>
-                                        <a href="#">12, Comments</a>
+                                        <a href="#">12 Comments</a>
                                     </div>
                                 </div>   
                                 <!--Read More-->
@@ -672,7 +672,7 @@
                                     <!--Comments-->
                                     <div class="detail">
                                         <i class="far fa-comments"></i>
-                                        <a href="#">12, Comments</a>
+                                        <a href="#">12 Comments</a>
                                     </div>
                                 </div>   
                                 <!--Read More-->
@@ -743,7 +743,7 @@
                                     <!--Comments-->
                                     <div class="detail">
                                         <i class="far fa-comments"></i>
-                                        <a href="#">12, Comments</a>
+                                        <a href="#">12 Comments</a>
                                     </div>
                                 </div>   
                                 <!--Read More-->
@@ -790,9 +790,49 @@
 
         <!--FOOTER-->
         <footer>
-
+            <!--Top Footer-->
+            <div class="top-footer-container">
+                <!--About The Blog--->
+                <div class="about-the-blog-container">
+                    <!--Heading-->
+                    <h4>ABOUT THE BLOG</h4>
+                    <!--Text-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum facere at magnam deserunt pariatur nisi et itaque qui incidunt magni.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto est assumenda quaerat eaque expedita enim eveniet ad nobis.</p>
+                    <!--Ending-->
+                    <h4>ABOUT THE BLOG <i class="fas fa-chevron-right"></i></h4>
+                </div>
+                <!--End About The Blog-->
+            </div>
+            <!--End Top Footer-->
+            <!--Bottom Footer-->
+            <div class="bottom-footer-container">
+                <!--Logo-->
+                <div class="bottom-footer-logo-container">
+                    <img :src="footerLogo" alt="logo-footer">
+                    <p>{{copyright}}</p>
+                </div>
+                <!--End Logo-->
+                <!--Links-->
+                <div class="bottom-footer-links-container">
+                    <!--Single Link-->
+                    <div v-for="element in bottomFooterLinks"class="bottom-footer-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#">{{element}}</a>
+                    </div>
+                </div>
+                <!--End Links-->
+                <!--Relative chevron-->
+                <div id="relative-chevron">
+                    <div class="relative-chevron-container">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+                <!--End Relative chevron-->
+            </div>
+            <!--End Bottom Footer-->
+            </div>
         </footer>
-        <!--END FOOTER-->
 
     </div>
     <!--END ID ROOT-->
