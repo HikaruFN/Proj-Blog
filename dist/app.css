@@ -82,6 +82,15 @@ a {
   color: #0088CC;
 }
 
+/*Article Title P And Hover*/
+.article-title p {
+  display: none;
+}
+
+.article-title:hover p {
+  display: block;
+}
+
 /*Top Main*/
 /*Top Main Articles*/
 .top-main-articles-container {

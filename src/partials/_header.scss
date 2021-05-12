@@ -30,3 +30,13 @@
         color: $primary_color;
     }
 }
+
+/*Article Title P And Hover*/
+.article-title p{
+    display: none;
+}
+.article-title:hover{
+    p{
+        display: block;
+    }
+}
