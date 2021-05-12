@@ -139,8 +139,12 @@
 /*Read More*/
 @mixin read_more{
     padding: 10px;
-    border: 1px solid $top_main_articles_bg_color;
-    border-radius: 10px
+    border: 1px solid $read_more_color;
+    border-radius: 10px;
+    cursor: pointer;
+    p{
+        color: $read_more_color;
+    }
 }
 /*Single Tag*/
 @mixin single_tag {
@@ -156,4 +160,11 @@
     justify-content: space-between;
     padding: $inner_padding;
     position: relative;
+}
+
+/*Hover*/
+@mixin p_hover {
+    display: block;
+    font-size: 15px;
+    font-weight: bolder; 
 }

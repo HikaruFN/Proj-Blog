@@ -1,5 +1,6 @@
 /*COLORS*/
 $primary_color: #0088CC;
+$read_more_color: #DEDEDE;
 /*Text Colors*/
 $primary_text_color: #B7B7B7;
 $secondary_text_color: #FFFFFF;
@@ -10,3 +11,8 @@ $bottom-footer-bg-color: #1C2023;
 
 /*Inner Padding*/
 $inner_padding: 30px 110px;
+$padding_left: 30px;
+$padding_right: 30px;
+
+/*Calc*/
+$divided_in_3: calc(100% / 3);

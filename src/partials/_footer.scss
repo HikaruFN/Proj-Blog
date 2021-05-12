@@ -2,12 +2,11 @@
 .top-footer-container{
     @include footer_container;
     background-color: $main-slider-nav-type-option-bg-color;
-    h4{
-        color: white;
-    }
-    p{
-        margin: 5px 0;
-        font-size: 12px;
+    .about-the-blog-container, .recent-posts-container{
+        @include flex_column;
+        *{
+            margin-bottom: 10px;
+        }
     }
 }
 

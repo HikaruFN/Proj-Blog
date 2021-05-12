@@ -66,9 +66,9 @@
 }
 /*Main Core Articles*/
 .core-articles-container{
-    padding: $inner_padding;
     @include flex_row;
     flex-wrap: wrap;
+    padding: $inner_padding;
     .page-slider-container{
         @include flex_row;
         justify-content: flex-end;
@@ -134,7 +134,7 @@
             @include flex_row;
             flex-wrap: wrap;
             img{
-                width: calc(100% / 3);
+                width: $divided_in_3;
             }
     }
     .social-info-container{
@@ -162,11 +162,12 @@
                 @include flex_row;
                 flex-wrap: wrap;
                 img{
-                    width: calc(100% / 3)
+                    width: $divided_in_3;
                 }
             }
             .tweat-container{
                 @include flex_column;
+                margin-bottom: 10px;
                 .tweat-text{
                     @include flex_row;
                     margin-bottom: 5px;

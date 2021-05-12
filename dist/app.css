@@ -2,6 +2,7 @@
 /*Text Colors*/
 /*Background colors*/
 /*Inner Padding*/
+/*Calc*/
 /*Flex*/
 /*Ul*/
 /*Links*/
@@ -14,6 +15,7 @@
 /*Read More*/
 /*Single Tag*/
 /*Footer Containers*/
+/*Hover*/
 /*Reset*/
 * {
   margin: 0;
@@ -374,9 +376,9 @@ a {
 
 /*Main Core Articles*/
 .core-articles-container {
-  padding: 30px 110px;
   display: flex;
   flex-wrap: wrap;
+  padding: 30px 110px;
 }
 .core-articles-container .page-slider-container {
   display: flex;
@@ -412,8 +414,12 @@ a {
 }
 .core-articles-container .core-article-info-container .article-info .article-details .read-more {
   padding: 10px;
-  border: 1px solid #F7F7F7;
+  border: 1px solid #DEDEDE;
   border-radius: 10px;
+  cursor: pointer;
+}
+.core-articles-container .core-article-info-container .article-info .article-details .read-more p {
+  color: #DEDEDE;
 }
 .core-articles-container .core-article-info-container .article-info .article-details .details-container {
   display: flex;
@@ -495,6 +501,7 @@ a {
 .core-articles-container .social-info-container .social-container .tweat-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .core-articles-container .social-info-container .social-container .tweat-container .tweat-text {
   display: flex;
@@ -518,12 +525,12 @@ a {
   position: relative;
   background-color: #212529;
 }
-.top-footer-container h4 {
-  color: white;
+.top-footer-container .about-the-blog-container {
+  display: flex;
+  flex-direction: column;
 }
-.top-footer-container p {
-  margin: 5px 0;
-  font-size: 12px;
+.top-footer-container .about-the-blog-container * {
+  margin-bottom: 10px;
 }
 
 /*Bottom Footer*/
