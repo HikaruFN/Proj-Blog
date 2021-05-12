@@ -136,9 +136,16 @@
     color: $secondary_text_color;
     background-color: $main-slider-nav-type-option-bg-color;
 }
-//
+/*Read More*/
 @mixin read_more{
     padding: 10px;
     border: 1px solid $top_main_articles_bg_color;
     border-radius: 10px
+}
+/*Single Tag*/
+@mixin single_tag {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $main-slider-nav-type-option-bg-color;
+    color: $secondary_text_color;
 }

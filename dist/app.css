@@ -11,6 +11,8 @@
 /*Core Main Articles*/
 /*Day*/
 /*Month*/
+/*Read More*/
+/*Single Tag*/
 /*Reset*/
 * {
   margin: 0;
@@ -42,6 +44,11 @@ ul li {
 
 hr {
   border-top: 1px solid #B7B7B7;
+}
+
+a {
+  text-decoration: none;
+  color: #0088CC;
 }
 
 /*Top Header*/
@@ -359,61 +366,134 @@ hr {
   display: flex;
   flex-wrap: wrap;
 }
+.core-articles-container .page-slider-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+.core-articles-container .page-slider-container .page-slider-option {
+  padding: 10px;
+  border: 1px solid #B7B7B7;
+  cursor: pointer;
+}
+.core-articles-container .page-slider-container .page-slider-option span, .core-articles-container .page-slider-container .page-slider-option .fas {
+  color: #0088CC;
+}
+.core-articles-container .page-slider-container .page-slider-option:hover {
+  background-color: #0088CC;
+}
+.core-articles-container .page-slider-container .page-slider-option:hover span, .core-articles-container .page-slider-container .page-slider-option:hover .fas {
+  color: #FFFFFF;
+}
 .core-articles-container .core-article-container {
   width: 70%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.core-articles-container .core-article-container .core-article-info-container {
+.core-articles-container .core-article-info-container {
   display: flex;
   padding: 10px;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-info .article-details {
+.core-articles-container .core-article-info-container .article-info .article-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .read-more {
+.core-articles-container .core-article-info-container .article-info .article-details .read-more {
   padding: 10px;
   border: 1px solid #F7F7F7;
   border-radius: 10px;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .details-container {
+.core-articles-container .core-article-info-container .article-info .article-details .details-container {
   display: flex;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .details-container .detail {
+.core-articles-container .core-article-info-container .article-info .article-details .details-container .detail {
   margin: 0 5px;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-info .article-details .details-container .detail a {
-  text-decoration: none;
-  color: #0088CC;
+.core-articles-container .core-article-info-container .article-info .article-title, .core-articles-container .core-article-info-container .article-description, .core-articles-container .core-article-info-container .article-details {
+  margin-bottom: 10px;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-date-container {
+.core-articles-container .core-article-info-container .article-date-container {
   width: 10%;
   margin-right: 10px;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-date-container .article-date {
+.core-articles-container .core-article-info-container .article-date-container .article-date {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-date-container .article-date .month {
+.core-articles-container .core-article-info-container .article-date-container .article-date .month {
   text-align: center;
   height: 20px;
   width: 50px;
   color: #FFFFFF;
   background-color: #212529;
 }
-.core-articles-container .core-article-container .core-article-info-container .article-date-container .article-date .day {
+.core-articles-container .core-article-info-container .article-date-container .article-date .day {
   text-align: center;
   line-height: 50px;
   height: 50px;
   width: 50px;
   background-color: #F7F7F7;
 }
-.core-articles-container .core-article-container img {
+.core-articles-container img {
   width: 100%;
 }
+.core-articles-container .core-article-img-in-six {
+  display: flex;
+  flex-wrap: wrap;
+}
+.core-articles-container .core-article-img-in-six img {
+  width: calc(100% / 3);
+}
 .core-articles-container .social-info-container {
-  width: 30%;
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: calc(30% - 10px);
+  margin-left: 10px;
+}
+.core-articles-container .social-info-container .social-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.core-articles-container .social-info-container .social-container .page-link {
+  border-left: 4px solid #B7B7B7;
+  padding-left: 20px;
+}
+.core-articles-container .social-info-container .social-container .tag-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+.core-articles-container .social-info-container .social-container .tag-list-container .single-tag {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #212529;
+  color: #FFFFFF;
+}
+.core-articles-container .social-info-container .social-container .social-heading {
+  margin-bottom: 10px;
+}
+.core-articles-container .social-info-container .social-container .instagram-photos-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.core-articles-container .social-info-container .social-container .instagram-photos-container img {
+  width: calc(100% / 3);
+}
+.core-articles-container .social-info-container .social-container .tweat-container {
+  display: flex;
+  flex-direction: column;
+}
+.core-articles-container .social-info-container .social-container .tweat-container .tweat-text {
+  display: flex;
+  margin-bottom: 5px;
+}
+.core-articles-container .social-info-container .social-container .tweat-container .tweat-text i {
+  margin-right: 5px;
+}
+.core-articles-container .social-info-container .social-container .tweat-container .tweat-date {
+  margin-left: 16px;
+}
+.core-articles-container .social-info-container .social-container .tweat-container .tweat-date p {
+  color: #0088CC;
 }

@@ -22,3 +22,6 @@ ul{
 hr{
     border-top: 1px solid $primary_text_color;
 }
+a{
+    @include default_a;
+}
