@@ -396,6 +396,10 @@ a {
   font-size: 15px;
   color: #FFFFFF;
 }
+.slider-nav-container .option-type-container:hover {
+  margin: 0 5px;
+  padding: 5px 30px;
+}
 
 /*Main Core Articles*/
 .core-articles-container {
@@ -581,7 +585,7 @@ a {
 }
 .top-footer-container .about-the-blog-container .links-container .single-link, .top-footer-container .recent-posts-container .links-container .single-link, .top-footer-container .recent-comments-container .links-container .single-link, .top-footer-container .categories-container .links-container .single-link {
   margin: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
   background-color: #000000;
   color: #FFFFFF;

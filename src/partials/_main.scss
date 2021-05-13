@@ -64,6 +64,10 @@
             color: $secondary_text_color;
         }
     }
+    .option-type-container:hover{
+        margin: 0 5px;
+        padding: 5px 30px;
+    }
 }
 /*Main Core Articles*/
 .core-articles-container{
