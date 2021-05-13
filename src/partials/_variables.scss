@@ -1,19 +1,26 @@
 /*COLORS*/
 $primary_color: #0088CC;
-$read_more_color: #DEDEDE;
+$darken_primary_color: #0074AD;
 /*Text Colors*/
 $primary_text_color: #B7B7B7;
 $secondary_text_color: #FFFFFF;
-$tertiary_text_color: #000000;
+$tertiary_text_color: #000000; 
 /*Background colors*/
-$top_main_articles_bg_color: #F7F7F7;
-$main-slider-nav-type-option-bg-color: #212529;
-$bottom-footer-bg-color: #1C2023;
+$bg_top_main_articles: #F7F7F7; 
+$bg_color_2: #212529; 
+$bg-color-3: #0088CC;
+$bg-color-top-footer: #212529;
+$bottom-footer-bg-color: #0A0C0D;
+$relative_chevron_bg: #B7B7B7;
+$bg_color_balck: #000000;
+/*Border colors*/
+$border_read_more: #BFBFBF;
+
 
 /*Inner Padding*/
-$inner_padding: 30px 110px;
-$padding_left: 30px;
-$padding_right: 30px;
+$inner_padding: 40px 110px;
 
 /*Calc*/
 $divided_in_3: calc(100% / 3);
+
+$divided_in_3_with_margin: calc(100% / 3 - 10px);

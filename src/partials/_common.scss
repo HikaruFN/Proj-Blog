@@ -17,11 +17,29 @@ ul{
     @include flex_row;
 }
 .fas{
-    color: black;
+    color: $tertiary_text_color;
 }
 hr{
     border-top: 1px solid $primary_text_color;
 }
 a{
     @include default_a;
+}
+
+/*Page Reset Chevron*/
+#relative-chevron{
+    position: fixed;
+    z-index: 1;
+    left: 95%;
+    top: 96%;
+    cursor: pointer;
+    .relative-chevron-container{
+        padding: 10px 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: $relative_chevron_bg;
+        i{
+            color: $secondary_text_color;
+        }
+    }
 }

@@ -26,7 +26,7 @@
 /*Articles*/
 @mixin top_articles {
     margin: 5px;
-    width: calc(100% / 3 - 10px);  
+    width: $divided_in_3_with_margin;  
     background-size: cover;
     padding: 10px;
     opacity: 0.9;
@@ -37,7 +37,7 @@
         font-size: 8px;
         padding: 5px 10px;
         border-radius: 5px;
-        background-color: $primary_color;
+        background-color: $bg-color-3;
         width: fit-content;
         color: $secondary_text_color;
     }
@@ -53,7 +53,7 @@
     .popular-posts-container, .recent-posts-container, .featured-and-author-posts-container{
         @include flex_column;
         justify-content: space-between;
-        width: calc(100% / 3 - 10px);
+        width: $divided_in_3_with_margin;
         margin: 0 5px;
         .featured-posts-container{
             .featured-post{
@@ -61,7 +61,7 @@
                 @include flex_column;
                 justify-content: flex-end;
                 padding: 10px;
-                height: 200px;
+                height: 300px;
                 cursor: pointer;
                 background-image: url(../../img/blog-66.jpg);
                 background-size: cover;
@@ -69,7 +69,7 @@
                     font-size: 8px;
                     padding: 5px 10px;
                     border-radius: 5px;
-                    background-color: $primary_color;
+                    background-color: $bg-color-3;
                     width: fit-content;
                     color: $secondary_text_color;
                 }
@@ -126,7 +126,7 @@
     line-height: 50px;
     height: 50px;
     width: 50px;
-    background-color: $top_main_articles_bg_color;
+    background-color: $bg_top_main_articles;
 }
 /*Month*/
 @mixin month {
@@ -134,23 +134,23 @@
     height: 20px;
     width: 50px;
     color: $secondary_text_color;
-    background-color: $main-slider-nav-type-option-bg-color;
+    background-color: $bg_color_2;
 }
 /*Read More*/
 @mixin read_more{
     padding: 10px;
-    border: 1px solid $read_more_color;
+    border: 1px solid $border_read_more;
     border-radius: 10px;
     cursor: pointer;
     p{
-        color: $read_more_color;
+        color: $primary_text_color;
     }
 }
 /*Single Tag*/
 @mixin single_tag {
     padding: 5px;
     border-radius: 10px;
-    background-color: $main-slider-nav-type-option-bg-color;
+    background-color: $bg_color_balck;
     color: $secondary_text_color;
 }
 
@@ -159,7 +159,6 @@
     @include flex_row;
     justify-content: space-between;
     padding: $inner_padding;
-    position: relative;
 }
 
 /*Hover*/
@@ -169,14 +168,52 @@
     font-weight: bolder; 
 }
 
+/*Core Main Page Slider*/
+@mixin page_slider {
+    @include flex_row;
+        justify-content: flex-end;
+        width: 70%;
+        margin-bottom: 60px;
+        .page-slider-option{
+            padding: 10px;
+            border: 1px solid $border_read_more;
+            cursor: pointer;
+            span, .fas{
+                color: $primary_color;
+            }
+        }
+        .page-slider-option:hover{
+            background-color: $bg-color-3;
+            span, .fas{
+                color: $secondary_text_color;
+            }
+        }
+}
+
 /*Top Footer Single Link*/
 @mixin top_footer_single_link {
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-    background-color: $tertiary_text_color;
-    color: #FFFFFF;
+    background-color: $bg_color_balck;
+    color: $secondary_text_color;
     a{
-        color: white;
+        color: $secondary_text_color;
+    }
+}
+
+/*Get In Touch*/
+@mixin get_in_touch {
+    position: absolute;
+    bottom: 95%;
+    box-shadow: -8px 0px 5px;
+    .get-in-touch-container{
+        padding: 15px 30px;
+        background-color: $bg-color-3;
+        span{
+            color: $secondary_text_color;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 20px;
+        }
     }
 }

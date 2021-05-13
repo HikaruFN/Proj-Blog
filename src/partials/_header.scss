@@ -1,7 +1,7 @@
 /*Top Header*/
 .top-header-nav-container{
     @include flex_row;
-    background-color: $primary_color;
+    background-color: $bg-color-3;
     padding: $inner_padding;
     ul{
         li{
@@ -23,7 +23,7 @@
     justify-content: space-between;
     padding: $inner_padding;
     li{
-        color: #555555;
+        color: $primary_text_color;
         padding-right: 30px;
     }
     li:first-child{

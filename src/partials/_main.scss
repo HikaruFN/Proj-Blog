@@ -4,7 +4,7 @@
     @include flex_row;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: $top_main_articles_bg_color;
+    background-color: $bg_top_main_articles;
     padding: $inner_padding;
 }
 .top-article-container-photography{
@@ -41,6 +41,7 @@
 /*Top Main Posts*/
 .top-main-posts-container{
     @include flex_row;
+    align-items: baseline;
     @include top_posts;
 }
 /*Main Slider Nav*/
@@ -48,7 +49,7 @@
     @include flex_row;
     justify-content: space-between;
     align-items: center;
-    background-color: $primary_color;
+    background-color: $bg-color-3;
     padding: $inner_padding;
     .slider-chevron{
         font-size: 10px;
@@ -56,7 +57,7 @@
     }
     .option-type-container{
         padding: 5px 25px;
-        background-color: $main-slider-nav-type-option-bg-color;
+        background-color: $bg_color_2;
         cursor: pointer;
         h3{
             font-size: 15px;
@@ -70,27 +71,11 @@
     flex-wrap: wrap;
     padding: $inner_padding;
     .page-slider-container{
-        @include flex_row;
-        justify-content: flex-end;
-        width: 70%;
-        .page-slider-option{
-            padding: 10px;
-            border: 1px solid $primary_text_color;
-            cursor: pointer;
-            span, .fas{
-                color: $primary_color;
-            }
-        }
-        .page-slider-option:hover{
-            background-color: $primary_color;
-            span, .fas{
-                color: $secondary_text_color;
-            }
-        }
+        @include page_slider;
     }
     .core-article-container{
         width: 70%;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         }
         .core-article-info-container{
             @include flex_row;
@@ -138,9 +123,10 @@
             }
     }
     .social-info-container{
-        @include flex_column;
-        width: calc(30% - 10px);
-        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        width: calc(30% - 20px);
+        margin-left: 20px;
         .social-container{
             @include flex_column;
             margin-bottom: 10px;

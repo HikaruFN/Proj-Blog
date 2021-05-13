@@ -1,20 +1,10 @@
 /*Top Footer*/
 .top-footer-container{
     @include footer_container;
-    background-color: $main-slider-nav-type-option-bg-color;
+    position: relative;
+    background-color: $bg-color-top-footer;
     .relative-get-in-touch{
-        position: absolute;
-        bottom: 95%;
-        box-shadow: -8px 0px 5px;
-        .get-in-touch-container{
-            padding: 15px 30px;
-            background-color: $primary_color;
-            span{
-                color: $secondary_text_color;
-                font-family: 'Shadows Into Light', cursive;
-                font-size: 20px;
-            }
-        }
+      @include get_in_touch;
     }
     .about-the-blog-container, .recent-posts-container, .recent-comments-container, .categories-container{
         @include flex_column;
@@ -44,7 +34,7 @@
                 color: $secondary_text_color;
             }
             i{
-                color: $primary_color;
+                color: $darken_primary_color;
             }
         }
         .post-container{
@@ -58,7 +48,7 @@
         .post-text-container{
             @include flex_column;
             .content{
-                color: $top_main_articles_bg_color;
+                color: $primary_text_color;
             }
         }
         .heading-container, .ending-container{
@@ -77,22 +67,6 @@
 .bottom-footer-container{
     @include footer_container;
     background-color: $bottom-footer-bg-color;
-    #relative-chevron{
-        position: fixed;
-        z-index: 1;
-        left: 95%;
-        top: 96%;
-        cursor: pointer;
-        .relative-chevron-container{
-            padding: 10px 15px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            background-color: $primary_text_color;
-            i{
-                color: $top_main_articles_bg_color;
-            }
-        }
-    }
     .bottom-footer-logo-container, .bottom-footer-links-container{
         @include flex_row;
         align-items: center;
