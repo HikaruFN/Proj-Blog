@@ -17,6 +17,7 @@ var app = new Vue({
     //Header Nav
     headerNav: ['HOME', 'ELEMENTS', 'FEATURES', 'PAGES', 'PORTFOLIO', 'BLOG', 'SHOP'],
     //Top Footer
+    topFooterLink: ['GADEGETS', 'PHOTOGRAPHY', 'LIFESTYLE', 'FASHION', 'RECIPES', 'TRAVEL', 'BUSINESS', 'ARCHITECTURES', 'REVIEWS', 'SPORTS', 'VIDEOS', 'TECHNOLOGY', 'DESIGN'],
     //Bottom Footer
     footerLogo: 'img/logo-footer.png',
     copyright: '© Copyright 2020. All Rights Reserved',

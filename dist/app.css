@@ -16,6 +16,7 @@
 /*Single Tag*/
 /*Footer Containers*/
 /*Hover*/
+/*Top Footer Single Link*/
 /*Reset*/
 * {
   margin: 0;
@@ -525,12 +526,81 @@ a {
   position: relative;
   background-color: #212529;
 }
-.top-footer-container .about-the-blog-container {
+.top-footer-container .relative-get-in-touch {
+  position: absolute;
+  bottom: 95%;
+  box-shadow: -8px 0px 5px;
+}
+.top-footer-container .relative-get-in-touch .get-in-touch-container {
+  padding: 15px 30px;
+  background-color: #0088CC;
+}
+.top-footer-container .relative-get-in-touch .get-in-touch-container span {
+  color: #FFFFFF;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+}
+.top-footer-container .about-the-blog-container, .top-footer-container .recent-posts-container, .top-footer-container .recent-comments-container, .top-footer-container .categories-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 4);
+  margin-right: 15px;
+}
+.top-footer-container .about-the-blog-container .post-img-container, .top-footer-container .recent-posts-container .post-img-container, .top-footer-container .recent-comments-container .post-img-container, .top-footer-container .categories-container .post-img-container {
+  margin-right: 10px;
+}
+.top-footer-container .about-the-blog-container .heading-container, .top-footer-container .about-the-blog-container p, .top-footer-container .recent-posts-container .heading-container, .top-footer-container .recent-posts-container p, .top-footer-container .recent-comments-container .heading-container, .top-footer-container .recent-comments-container p, .top-footer-container .categories-container .heading-container, .top-footer-container .categories-container p {
+  margin: 10px 0;
+}
+.top-footer-container .about-the-blog-container .links-container, .top-footer-container .recent-posts-container .links-container, .top-footer-container .recent-comments-container .links-container, .top-footer-container .categories-container .links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-footer-container .about-the-blog-container .links-container .single-link, .top-footer-container .recent-posts-container .links-container .single-link, .top-footer-container .recent-comments-container .links-container .single-link, .top-footer-container .categories-container .links-container .single-link {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.top-footer-container .about-the-blog-container .links-container .single-link a, .top-footer-container .recent-posts-container .links-container .single-link a, .top-footer-container .recent-comments-container .links-container .single-link a, .top-footer-container .categories-container .links-container .single-link a {
+  color: white;
+}
+.top-footer-container .about-the-blog-container .comment-content, .top-footer-container .recent-posts-container .comment-content, .top-footer-container .recent-comments-container .comment-content, .top-footer-container .categories-container .comment-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-footer-container .about-the-blog-container .comment-content *, .top-footer-container .recent-posts-container .comment-content *, .top-footer-container .recent-comments-container .comment-content *, .top-footer-container .categories-container .comment-content * {
+  margin-right: 5px;
+}
+.top-footer-container .about-the-blog-container .comment-content h4, .top-footer-container .recent-posts-container .comment-content h4, .top-footer-container .recent-comments-container .comment-content h4, .top-footer-container .categories-container .comment-content h4 {
+  color: #FFFFFF;
+}
+.top-footer-container .about-the-blog-container .comment-content i, .top-footer-container .recent-posts-container .comment-content i, .top-footer-container .recent-comments-container .comment-content i, .top-footer-container .categories-container .comment-content i {
+  color: #0088CC;
+}
+.top-footer-container .about-the-blog-container .post-container, .top-footer-container .recent-posts-container .post-container, .top-footer-container .recent-comments-container .post-container, .top-footer-container .categories-container .post-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.top-footer-container .about-the-blog-container .post-container img, .top-footer-container .recent-posts-container .post-container img, .top-footer-container .recent-comments-container .post-container img, .top-footer-container .categories-container .post-container img {
+  border-radius: 50%;
+}
+.top-footer-container .about-the-blog-container .post-text-container, .top-footer-container .recent-posts-container .post-text-container, .top-footer-container .recent-comments-container .post-text-container, .top-footer-container .categories-container .post-text-container {
   display: flex;
   flex-direction: column;
 }
-.top-footer-container .about-the-blog-container * {
-  margin-bottom: 10px;
+.top-footer-container .about-the-blog-container .post-text-container .content, .top-footer-container .recent-posts-container .post-text-container .content, .top-footer-container .recent-comments-container .post-text-container .content, .top-footer-container .categories-container .post-text-container .content {
+  color: #F7F7F7;
+}
+.top-footer-container .about-the-blog-container .heading-container h4, .top-footer-container .about-the-blog-container .ending-container h4, .top-footer-container .recent-posts-container .heading-container h4, .top-footer-container .recent-posts-container .ending-container h4, .top-footer-container .recent-comments-container .heading-container h4, .top-footer-container .recent-comments-container .ending-container h4, .top-footer-container .categories-container .heading-container h4, .top-footer-container .categories-container .ending-container h4 {
+  color: #FFFFFF;
+}
+.top-footer-container .about-the-blog-container .heading-container i, .top-footer-container .about-the-blog-container .ending-container i, .top-footer-container .recent-posts-container .heading-container i, .top-footer-container .recent-posts-container .ending-container i, .top-footer-container .recent-comments-container .heading-container i, .top-footer-container .recent-comments-container .ending-container i, .top-footer-container .categories-container .heading-container i, .top-footer-container .categories-container .ending-container i {
+  color: #FFFFFF;
+  margin-left: 5px;
 }
 
 /*Bottom Footer*/
@@ -542,10 +612,10 @@ a {
   background-color: #1C2023;
 }
 .bottom-footer-container #relative-chevron {
-  position: absolute;
-  left: 97%;
-  top: 77%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 1;
+  left: 95%;
+  top: 96%;
   cursor: pointer;
 }
 .bottom-footer-container #relative-chevron .relative-chevron-container {

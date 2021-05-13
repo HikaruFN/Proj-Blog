@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -405,7 +407,7 @@
                             <!--Text-->
                             <div class="tweat-text">
                                 <i class="fab fa-twitter"></i>
-                                <p>if you have any suggestions for the next <br>updates, let us know.</p>
+                                <p>if you have any suggestions for the next updates, let us know.</p>
                             </div>  
                             <!--Date-->
                             <div class="tweat-date">
@@ -417,7 +419,7 @@
                             <!--Text-->
                             <div class="tweat-text">
                                 <i class="fab fa-twitter"></i>
-                                <p>We have just updated Porto Admin. Check <br>the changelog for more information.</p>
+                                <p>We have just updated Porto Admin. Check the changelog for more information.</p>
                             </div>  
                             <!--Date-->
                             <div class="tweat-date">
@@ -795,21 +797,106 @@
                 <!--About The Blog--->
                 <div class="about-the-blog-container">
                     <!--Heading-->
-                    <h4>ABOUT THE BLOG</h4>
+                    <div class="heading-container">
+                        <h4>ABOUT THE BLOG</h4>
+                    </div>
                     <!--Text-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum facere at magnam deserunt pariatur nisi et itaque qui incidunt magni.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto est assumenda quaerat eaque expedita enim eveniet ad nobis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum facere at magnam <br> deserunt pariatur nisi et itaque qui incidunt magni.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto est assumenda <br> quaerat eaque expedita enim eveniet ad nobis...</p>
                     <!--Ending-->
-                    <h4>ABOUT THE BLOG <i class="fas fa-chevron-right"></i></h4>
+                    <div class="ending-container">
+                        <h4>VIEW MORE <i class="fas fa-chevron-right"></i></h4>
+                    </div>
                 </div>
                 <!--End About The Blog-->
                 <!--Recent Posts-->
                 <div class="recent-posts-container">
                     <!--Heading-->
-                    <h4>ABOUT THE BLOG</h4>
-                    <!---->
+                    <div class="heading-container">
+                        <h4>RECENT POSTS</h4>
+                    </div>
+                    <!--Single Post-->
+                    <div class="post-container">
+                        <div class="post-img-container">
+                            <img src="img/our-office-4-square.jpg" alt="our-office-4-square">
+                        </div>
+                        <div class="post-text-container">
+                            <p class="content">Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+                            <p class="date">12:53 AM Dec 19th</p>
+                        </div>                        
+                    </div>
+                    <!--Single Post-->
+                    <div class="post-container">
+                        <div class="post-img-container">
+                            <img src="img/our-office-5-square.jpg" alt="our-office-5-square">
+                        </div>
+                        <div class="post-text-container">
+                            <p class="content">Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+                            <p class="date">12:53 AM Dec 19th</p>
+                        </div>                        
+                    </div>
                 </div>
-                <!--Recent Posts-->
+                <!--End Recent Posts-->
+
+                <!--Recent Comments-->
+                <div class="recent-comments-container">
+                    <!--Heading-->
+                    <div class="heading-container">
+                        <h4>RECENT COMMENTS</h4>
+                    </div>
+                    <!--Single Comment-->
+                    <div class="comment-container">
+                        <div class="comment-content-container">
+                            <div class="comment-content">
+                                <i class="fas fa-chevron-right"></i>  
+                                <h4>John Doe </h4>
+                                <p>commented on</p>
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </div>
+                            <div class="date">
+                                <p>12:55 AM Dec 19th</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!--Single Comment-->
+                     <div class="comment-container">
+                        <div class="comment-content-container">
+                            <div class="comment-content">
+                                <i class="fas fa-chevron-right"></i>  
+                                <h4>John Doe </h4>
+                                <p>commented on</p>
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </div>
+                            <div class="date">
+                                <p>12:55 AM Dec 19th</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Recent Comments--> 
+                
+                <!--Categories-->
+                <div class="categories-container">
+                    <!--Heading-->
+                    <div class="heading-container">
+                        <h4>CATEGORIES</h4>
+                    </div>
+                    <!--Links-->
+                    <div class="links-container">
+                        <!--sINGLE Link-->
+                        <div v-for="element in topFooterLink" class="single-link">
+                            <h5><a href="#">{{element}}</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <!--End Categories--> 
+                <!--Relative Get in Touch-->
+                <div class="relative-get-in-touch">
+                    <div class="get-in-touch-container">
+                        <span>Get in Touch</span>
+                    </div>
+                </div>     
+                <!--Relative Get in Touch-->    
             </div>
             <!--End Top Footer-->
             <!--Bottom Footer-->

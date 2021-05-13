@@ -168,3 +168,15 @@
     font-size: 15px;
     font-weight: bolder; 
 }
+
+/*Top Footer Single Link*/
+@mixin top_footer_single_link {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $tertiary_text_color;
+    color: #FFFFFF;
+    a{
+        color: white;
+    }
+}

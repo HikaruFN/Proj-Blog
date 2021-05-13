@@ -2,10 +2,73 @@
 .top-footer-container{
     @include footer_container;
     background-color: $main-slider-nav-type-option-bg-color;
-    .about-the-blog-container, .recent-posts-container{
+    .relative-get-in-touch{
+        position: absolute;
+        bottom: 95%;
+        box-shadow: -8px 0px 5px;
+        .get-in-touch-container{
+            padding: 15px 30px;
+            background-color: $primary_color;
+            span{
+                color: $secondary_text_color;
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 20px;
+            }
+        }
+    }
+    .about-the-blog-container, .recent-posts-container, .recent-comments-container, .categories-container{
         @include flex_column;
-        *{
+        width: calc(100% / 4);
+        margin-right: 15px;
+        .post-img-container{
+            margin-right: 10px;
+        }
+        .heading-container, p{
+            margin: 10px 0;
+        }
+        .links-container{
+            @include flex_row;
+            flex-wrap: wrap;
+            .single-link{
+             @include top_footer_single_link;
+            }
+        }
+        .comment-content{
+            @include flex_row;
+            align-items: center;
+            flex-wrap: wrap;
+            *{
+                margin-right: 5px;
+            }
+            h4{
+                color: $secondary_text_color;
+            }
+            i{
+                color: $primary_color;
+            }
+        }
+        .post-container{
+            @include flex_row;
+            align-items: center;
             margin-bottom: 10px;
+            img{
+                border-radius: 50%;
+            }
+        }
+        .post-text-container{
+            @include flex_column;
+            .content{
+                color: $top_main_articles_bg_color;
+            }
+        }
+        .heading-container, .ending-container{
+            h4{
+                color: $secondary_text_color;
+            }
+            i{
+                color: $secondary_text_color;
+                margin-left: 5px;
+            }      
         }
     }
 }
@@ -15,10 +78,10 @@
     @include footer_container;
     background-color: $bottom-footer-bg-color;
     #relative-chevron{
-        position: absolute;
-        left: 97%;
-        top: 77%;
-        transform: translate(-50%, -50%);
+        position: fixed;
+        z-index: 1;
+        left: 95%;
+        top: 96%;
         cursor: pointer;
         .relative-chevron-container{
             padding: 10px 15px;
